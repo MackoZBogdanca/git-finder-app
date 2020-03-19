@@ -1,4 +1,4 @@
-const inputValue = document.getElementById("search");
+const inputValue = document.querySelector("#search");
 const searchButton = document.querySelector(".search-button");
 const nameContainer = document.querySelector(".profile-name");
 const userNameContainer = document.querySelector(".profile-username");
@@ -9,11 +9,11 @@ const client_id = "Iv1.95f7d52a57185b0c";
 const client_secret = "11bb4d7fd89247b32cdce162de50d79f7f291eee";
 
 const fetchUsers = async user => {
-  const fetchApi = await fetch(
+  const response = await fetch(
     `https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`
   );
 
-  const data = await fetchApi.json();
+  const data = await response.json();
   return { data };
 };
 
@@ -28,4 +28,5 @@ const showData = () => {
 
 searchButton.addEventListener("click", () => {
   showData();
+  inputValue.value = "";
 });
