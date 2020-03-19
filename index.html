@@ -2,8 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Git finder app</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="text-container">
+            <h1 class="title">Welcome to heeelll</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
+              dolorem nihil ab aperiam porro, id dolore nisi excepturi rem saepe
+              sequi odit eligendi doloremque laudantium, commodi corrupti
+              asperiores magni alias.
+            </p>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              id="search"
+              class="main-input"
+              placeholder="Search..."
+            />
+            <button
+              type="button"
+              class="btn btn-outline-dark main-button search-button"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="profile-name profile-key"></p>
+              <p class="profile-username profile-key"></p>
+            </div>
+            <div class="col-md-6">
+              <p class="profile-repos profile-key"></p>
+              <p class="profile-url profile-key"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
 </html>
