@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap");
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 body {
   background-color: red;
@@ -35,12 +36,13 @@ p {
   margin-top: 5em;
 }
 
-.main-button {
+.search-button {
   border-color: black;
   color: black;
+  margin-left: 3em;
 }
 
-.main-button:hover {
+.search-button:hover {
   background-color: black !important;
   border-color: black !important;
 }
@@ -58,4 +60,10 @@ p {
 
 .profile-key {
   margin-top: 3em;
+}
+
+@include media-breakpoint-up(md) {
+  body {
+    background-color: blanchedalmond;
+  }
 }
