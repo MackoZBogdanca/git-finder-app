@@ -4,11 +4,28 @@ body {
   font-family: "Baloo 2", cursive;
   min-height: 100vh;
   border-bottom: 20px solid black;
+  border-top: 20px solid black;
 }
 
-h1 {
-  text-align: center;
+h1,
+p {
   color: black;
+}
+
+.state-container {
+  text-align: center;
+}
+
+.text-container {
+  margin-top: 10em;
+}
+
+.description {
+  margin-top: 5em;
+}
+
+.search-form {
+  margin-top: 5em;
 }
 
 .main-button {
@@ -16,7 +33,7 @@ h1 {
   color: black;
 }
 
-button:hover {
+.main-button:hover {
   background-color: black !important;
   border-color: black !important;
 }
@@ -25,5 +42,14 @@ button:hover {
   background: transparent;
   border: none;
   color: black;
+  border-bottom: 1.5px solid black;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+.profile-key {
+  margin-top: 3em;
 }
 /*# sourceMappingURL=style.css.map */
