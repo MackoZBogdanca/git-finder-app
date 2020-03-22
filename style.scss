@@ -2,11 +2,11 @@
 @import "node_modules/bootstrap/scss/bootstrap-grid.scss";
 
 body {
-  background-color: red;
+  background-color: blanchedalmond;
   font-family: "Baloo 2", cursive;
   min-height: 100vh;
-  border-bottom: 20px solid black;
-  border-top: 20px solid black;
+  border-bottom: 50px solid black;
+  border-top: 50px solid black;
 }
 
 h1,
@@ -19,14 +19,12 @@ p {
 }
 
 .text-container {
-  margin-top: 10em;
+  margin-top: 8em;
 }
 
-// .title {
-//   // text-align: center;
-//   // color: black;
-//   // margin-top: 5em;
-// }
+.title {
+  font-weight: 700;
+}
 
 .description {
   margin-top: 5em;
@@ -47,6 +45,23 @@ p {
   border-color: black !important;
 }
 
+@media (max-width: 790px) {
+  .search-button {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 1200px) {
+  .search-button {
+    margin-left: 4em;
+  }
+}
+
+@media (min-width: 1700px) {
+  .search-button {
+    margin-left: 5em;
+  }
+}
+
 .main-input {
   background: transparent;
   border: none;
@@ -58,12 +73,20 @@ p {
   text-align: center;
 }
 
-.profile-key {
-  margin-top: 3em;
+.data-container {
+  margin-top: 4em;
 }
 
-@include media-breakpoint-up(md) {
-  body {
-    background-color: blanchedalmond;
-  }
+.profile-key {
+  font-weight: 700;
 }
+
+.profile-value {
+  margin-left: 1em;
+}
+
+// @include media-breakpoint-up(md) {
+//   body {
+//     background-color: blanchedalmond;
+//   }
+// }

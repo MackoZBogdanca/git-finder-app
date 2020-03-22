@@ -19,10 +19,10 @@ const fetchUsers = async user => {
 
 const showData = () => {
   fetchUsers(inputValue.value).then(res => {
-    nameContainer.innerHTML = `Name: <span class="profile-value">${res.data.name}</span>`;
-    userNameContainer.innerHTML = `Username: <span class="profile-value">${res.data.login}</span>`;
-    reposContainer.innerHTML = `Repos: <span class="profile-value">${res.data.public_repos}</span>`;
-    urlContainer.innerHTML = `URL: <span class="profile-value">${res.data.html_url}</span>`;
+    nameContainer.innerHTML = `<span class="profile-key">Name: </span><span class="profile-value">${res.data.name}</span>`;
+    userNameContainer.innerHTML = `<span class="profile-key">Username: </span><span class="profile-value">${res.data.login}</span>`;
+    reposContainer.innerHTML = `<span class="profile-key">Repos: </span><span class="profile-value">${res.data.public_repos}</span>`;
+    urlContainer.innerHTML = `<span class="profile-key">URL: </span><span class="profile-value">${res.data.html_url}</span>`;
   });
 };
 
